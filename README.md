@@ -34,10 +34,16 @@ My job going in was to implement developper tools such as an in-game debug menu 
 
 ### Raven
 
-[Raven](https://github.com/Papa-Victor/8IAR125-ProjetRaven) is a game our AI for game's professor got from a Mat Buckland book he used as a source for his class. It's a top-down shooter featuring AI agents that go around collecting weapons and ammunition and killing each other. The player can take control of any of the agents and tell them where to go.
+[Raven](https://github.com/Papa-Victor/8IAR125-ProjetRaven) is a game our AI for games' professor got from a Mat Buckland book he used as a source for his class. It's a top-down shooter featuring AI agents that go around collecting weapons and ammunition and killing each other. The player can view what an agent is thinking by right-clicking them and take control of them by right-clicking them a second time. When controlling the agent, the player can right-click to issue a "go-to" command and left click to issue "shoot" command. The player can also use the number keys to switch which weapon they're using; this is dependent upon having ammunition for said weapon.
+
+![Navigation](Raven/Navigating.png)
+![Grenade Launcher](Raven/GrenadeLauncher.png)
 
 Our assignment was to add a bunch of different behaviours to those agents. The player also had to be able to create teams that would cooperate in different ways (all target the same opponent, warn the others when they die so they can pick up their weapons and ammunitions, etc).
 
-My assignment, along with one of my teammates, was to figure out a way to integrate machine learning into the mix. Our goal was relatively simple, our agent had to determine every frame if it should fire the weapon in his hands at the currently aimed at location. A more traditional game AI was in charge of aiming towards opponents, choosing what weapon to pull out, etc. My job was to take a bunch of data from the agent's surroundings and determine if firing the weapon was a good option.
+My assignment, along with one of my teammates, was to figure out a way to integrate machine learning into the mix. Our goal was as follow: our agent had to determine every frame if it should fire the weapon in his hands at the currently aimed at location. A more traditional game AI was in charge of aiming towards opponents, choosing what weapon to pull out, etc. My job was to take a bunch of data from the agent's surroundings and determine if firing the weapon was a good option.
 
-To do this, we implemented a way for the player to play the game while being periodically observed by the game. It would record data every time the player fired the weapon and regularly record data of the player not shooting. Then, all the player had to do was to let the AI crunch the data as it was training the underlying neural network. The player could then watch as the agent got destroyed by aimbotting AIs, just as he did while training said agent. When our player performed quite well, so did our neural network.
+To do this, we implemented a way for the player to play the game while being periodically observed by the game. It would record data every time the player fired the weapon and regularly record data of the player not shooting. After a reasonnable amount of time, the player could stop recording and start training. All the player had to do was to let the AI crunch the data as it was training the underlying neural network. After training the neural network, the player could add and remove Machine Learning agents from the map by heading the the ML menu.
+
+![Toggle Recording](Raven/ToggleRecording.png)
+![Train](Raven/Train.png)
