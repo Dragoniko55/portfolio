@@ -1,6 +1,6 @@
 # Welcome to my Portfolio
 
-Hi! My name is Nicolas, but everyone calls me Nick. I see you've stumbled upon my portfolio! Let me take you through my past experiences to give you a feel for the kind of projects I've been working on. Most of these projects will have a Windows-64 build at the provided links.
+Hi, my name is Nicolas! I'm currently completing my last semester for my bachelor's degree in computer science with a major in video game design. I see you've stumbled upon my portfolio! Let me take you through my past experiences to give you a feel for the kind of projects I've been working on. Most of these projects will have a Windows-64 build at the provided links.
 
 ## School Projects
 
